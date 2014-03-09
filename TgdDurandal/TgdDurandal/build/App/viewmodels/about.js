@@ -1,0 +1,1 @@
+define(["durandal/system","durandal/app"],function(e,n){var t=function(){var t=this;t.activate=function(){return e.defer(function(e){setTimeout(e.resolve,1e3)}).promise()},t.canDeactivate=function(){return n.showMessage("Are you sure you want to leave this page?","Navigate",["Yes","No"])}};return t});

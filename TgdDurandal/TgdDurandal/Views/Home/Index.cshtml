@@ -1,0 +1,17 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Durandal</title>
+        @Styles.Render("~/Content/css")
+    </head>
+    <body>
+        <div id="applicationHost" class="container">
+            Splash!!!
+        </div>
+        @Scripts.Render("~/Scripts/lib")
+
+        <script src="~/Scripts/require.js" data-main="/App/main"></script>
+        <script src="~/App/main-built.js"></script>
+    </body>
+</html>
