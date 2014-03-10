@@ -2,16 +2,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta http-equiv="Expires" CONTENT="0" />
+        <meta http-equiv="Cache-Control" CONTENT="no-cache"/>
+        <meta http-equiv="Pragma" CONTENT="no-cache" />
         <title>Durandal</title>
         @Styles.Render("~/Content/css")
     </head>
     <body>
-        <div id="applicationHost" class="container">
+        <div id="applicationHost">
             Splash!!!
         </div>
         @Scripts.Render("~/Scripts/lib")
-
-        <script src="~/Scripts/require.js" data-main="/App/main"></script>
-        <script src="~/App/main-built.js"></script>
+        
+        @if (HttpContext.Current.IsDebuggingEnabled)
+        {
+            <script src="~/Scripts/require.js" data-main="/App/main"></script>
+        }
+        else
+        {
+            <script src="~/App/main-built.js"></script>
+        }
     </body>
 </html>

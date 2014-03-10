@@ -1,17 +1,13 @@
-﻿define(['durandal/system', 'durandal/app'], function (system, app) {
-    var view = function () {
-        var self = this;
+﻿define(['durandal/system', 'durandal/app', 'modals/input', 'plugins/dialog'], function (system, app, InputModal, dialog) {
 
-        self.activate = function () {
-            return system.defer(function (d) {
-                setTimeout(d.resolve, 1000);
-            }).promise();
-        };
+    var items = ko.observableArray([]);
 
-        self.canDeactivate = function() {
-            return app.showMessage('Are you sure you want to leave this page?', 'Navigate', ['Yes', 'No']);
-        };
+    return {
+        items: items,
+        add: function() {
+            InputModal.show().then(function(response) {
+                items.push(response);
+            });
+        }
     };
-
-    return view;
 });

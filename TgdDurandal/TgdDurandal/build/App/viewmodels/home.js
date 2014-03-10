@@ -1,1 +1,1 @@
-define({elements:["Lorem ipsum","Tgd","Test"]});
+define(["durandal/system"],function(e){return{canActivate:function(){return e.log("canActivate"),!0},activate:function(){e.log("activate")},binding:function(){e.log("binding")},bindingComplete:function(){e.log("bindingComplete")},attached:function(){e.log("attached")},compositionComplete:function(){e.log("compositionComplete")},canDeactivate:function(){return e.log("canDeactivate"),!0},deactivate:function(){e.log("deactivate")},detached:function(){e.log("detached")}}});

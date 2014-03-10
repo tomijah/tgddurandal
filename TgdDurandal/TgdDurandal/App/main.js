@@ -14,7 +14,7 @@ define('lodash', _);
 define(['durandal/app', 'durandal/system', 'durandal/viewLocator'], function (app, system, viewLocator) {
     system.debug(true);
 
-    app.title = 'Durandal TGD';
+    app.title = 'TGD';
 
     app.configurePlugins({
         router: true,
