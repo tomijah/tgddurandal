@@ -1,4 +1,4 @@
-﻿define(['durandal/system'], function(system) {
+﻿define(['durandal/system', 'plugins/router'], function (system, router) {
     return {
         canActivate: function() {
             system.log('canActivate');
@@ -28,6 +28,9 @@
         },
         detached: function(view, parent) {
             system.log('detached');
+        },
+        go: function() {
+            router.navigateBack();
         }
     };
 });

@@ -1,1 +1,0 @@
-define(["durandal/app","plugins/router"],function(){return{}});

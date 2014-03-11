@@ -7,6 +7,7 @@
         add: function() {
             InputModal.show().then(function(response) {
                 items.push(response);
+                app.trigger('event', response);
             });
         }
     };

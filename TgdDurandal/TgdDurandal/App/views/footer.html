@@ -1,0 +1,13 @@
+﻿<footer>
+    <div class="container" style="margin-top: 20px">
+        <p data-bind="text: footerText"></p>
+        <p>
+            <button class="btn" data-bind="click: sub, enable: !subscription()">Subscribe</button>
+            <button class="btn" data-bind="click: unsub, enable: subscription()">Unsubscribe</button>
+        </p>
+        
+        <!-- ko compose: {view: 'childView.html', mode: 'templated'} -->
+        <p data-part="part">Replace</p>
+        <!-- /ko -->
+    </div>
+</footer>

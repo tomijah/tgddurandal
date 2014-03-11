@@ -1,1 +1,1 @@
-define(["durandal/system","durandal/app"],function(){return{}});
+define(["durandal/system","durandal/app","modals/input","plugins/dialog"],function(e,t,n){var i=ko.observableArray([]);return{items:i,add:function(){n.show().then(function(e){i.push(e),t.trigger("event",e)})}}});

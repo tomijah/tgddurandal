@@ -131,6 +131,15 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="App\modals\input.html" />
     <Content Include="App\modals\input.js" />
+    <Content Include="App\viewmodels\footer.js" />
+    <Content Include="App\viewmodels\master.js" />
+    <Content Include="App\viewmodels\master\secondchild.js" />
+    <Content Include="App\viewmodels\master\toactivate.js" />
+    <Content Include="App\views\childView.html" />
+    <Content Include="App\views\footer.html" />
+    <Content Include="App\views\master\secondchild.html" />
+    <Content Include="App\views\master\firstchild.html" />
+    <Content Include="App\viewmodels\master\firstchild.js" />
     <Content Include="App\viewmodels\not-found.js" />
     <Content Include="App\views\edit.html" />
     <Content Include="App\viewmodels\edit.js" />
@@ -141,6 +150,8 @@
     <Content Include="App\viewmodels\shell.js" />
     <Content Include="App\views\about.html" />
     <Content Include="App\views\home.html" />
+    <Content Include="App\views\master.html" />
+    <Content Include="App\views\master\toactivate.html" />
     <Content Include="App\views\not-found.html" />
     <Content Include="App\views\shell.html" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -173,9 +184,6 @@
     <Content Include="Scripts\durandal\transitions\entrance.js" />
     <Content Include="Scripts\durandal\viewEngine.js" />
     <Content Include="Scripts\durandal\viewLocator.js" />
-    <Content Include="Scripts\knockout.activity.js" />
-    <Content Include="Scripts\knockout.command.js" />
-    <Content Include="Scripts\knockout.dirtyFlag.js" />
     <Content Include="Scripts\knockout.validation.debug.js" />
     <Content Include="Scripts\knockout.validation.js" />
     <Content Include="Scripts\lodash.js" />

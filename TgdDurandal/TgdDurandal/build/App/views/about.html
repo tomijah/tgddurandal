@@ -3,4 +3,9 @@
     <p>
         Lorem ipsum
     </p>
+    
+    <a href="#" data-bind="click: add" >Add item</a>
+    <ul data-bind="foreach: items">
+        <li data-bind="text: $data"></li>
+    </ul>
 </div>

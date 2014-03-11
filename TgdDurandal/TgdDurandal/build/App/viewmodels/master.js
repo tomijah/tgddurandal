@@ -1,0 +1,1 @@
+define(["plugins/router","durandal/app"],function(e){var t=e.createChildRouter().makeRelative({fromParent:!0}).map([{route:"",moduleId:"viewmodels/master/firstchild",title:"First child",nav:!0},{route:"secondchild",moduleId:"viewmodels/master/secondchild",title:"Second child",nav:!0}]).buildNavigationModel();return{router:t}});

@@ -24,14 +24,12 @@
                                                     .Include("~/Scripts/bootstrap.js")
                                                     .Include("~/Scripts/knockout-{version}.js")
                                                     .Include("~/Scripts/knockout.validation.js")
-                                                    .Include("~/Scripts/knockout.activity.js")
                                                     .Include("~/Scripts/lodash.js"));
 
             bundles.Add(
                 new StyleBundle("~/Content/css").Include("~/Content/bootstrap.min.css")
                                                 .Include("~/Content/durandal.css")
                                                 .Include("~/Content/site.css"));
-
         }
     }
 }

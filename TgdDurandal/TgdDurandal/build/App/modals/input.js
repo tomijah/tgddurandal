@@ -1,0 +1,1 @@
+define(["plugins/dialog"],function(e){var t=function(){this.input=ko.observable().extend({required:!0})};return t.prototype.ok=function(){var t=ko.validation.group(this);t.showAllMessages(!0),this.isValid()&&e.close(this,this.input())},t.show=function(){return e.show(new t)},t});
